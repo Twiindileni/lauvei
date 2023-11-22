@@ -1,14 +1,16 @@
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-    // Add your form submission logic here
-    // You can use AJAX or other methods to handle form submission
-    alert('Form submitted!');
+document.addEventListener('DOMContentLoaded', function() {
+    // Home button
+    document.getElementById('homeBtn').addEventListener('click', function() {
+        redirectToPage('home.html'); // Replace 'home.html' with the actual page URL
+    });
+
+    // New Stock button
+    document.getElementById('newStockBtn').addEventListener('click', function() {
+        redirectToPage('new_stock.html'); // Replace 'new_stock.html' with the actual page URL
+    });
+
+    // Contact button
+    document.getElementById('contactBtn').addEventListener('click', function() {
+        redirectToPage('contact.html'); // Replace 'contact.html' with the actual page URL
+    });
 });
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
